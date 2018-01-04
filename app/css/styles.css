@@ -1,0 +1,123 @@
+/* sass breakpoint mixin */
+body {
+  margin: 0 auto;
+  padding: 0; }
+
+.background-image {
+  background-image: url("../images/background-image1.jpeg");
+  background-size: cover; }
+
+li {
+  list-style: none;
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0; }
+
+* {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin: 0 auto;
+  padding: 0; }
+
+#logo {
+  text-align: center;
+  color: white;
+  font-size: 70px; }
+
+.logo-meny {
+  text-align: right;
+  background-color: #333;
+  padding: 20px 0px 20px 0px; }
+  .logo-meny a {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-right: 50px; }
+
+.nav-software {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background-color: #fff;
+  border-bottom: 1px solid #c7c7c7; }
+  .nav-software ul li {
+    display: inline-block;
+    margin: 0px 15px 0px 15px; }
+    .nav-software ul li a {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin-top: 50px; }
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px; }
+
+tr:nth-child(even) {
+  background-color: #dddddd; }
+
+.button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; }
+
+.create-new {
+  margin-top: 50px;
+  width: 90%;
+  text-align: right;
+  margin-right: 50px; }
+
+#intro {
+  margin-top: 20vh;
+  text-align: center;
+  color: white;
+  font-size: 50px; }
+
+.link-buttons {
+  text-align: center;
+  margin-top: 7em; }
+  .link-buttons a {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    color: black;
+    background-color: #afafaf;
+    border-radius: 10px;
+    padding: 15px 32px;
+    font-size: 20px; }
+    @media (min-width: 45em) {
+      .link-buttons a {
+        margin: 50px;
+        display: inline-block; } }
+
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  height: 40vh; }
+  @media (min-width: 45em) {
+    footer {
+      display: flex;
+      margin-top: 120px;
+      background-color: #333;
+      height: 30vh;
+      width: 100%; }
+      footer div {
+        color: white;
+        font-size: 30px;
+        text-align: center; } }
+
+.footer {
+  padding-top: 30px; }

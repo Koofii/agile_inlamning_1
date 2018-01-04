@@ -1,0 +1,24 @@
+footer{
+    background-color: #333;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    height: 40vh;
+
+    @include respond-to('medium'){
+        display: flex;
+        margin-top: 120px;
+        background-color: #333;
+        height: 30vh;
+        width: 100%;
+        & div{
+            color: white;
+
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+.footer{
+    padding-top: 30px;
+}
