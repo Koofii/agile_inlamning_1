@@ -7,7 +7,60 @@ td, th{
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    @include respond-to ('small'){
+        &:nth-child(3){
+            display: none;
+        }
+        &:nth-child(4){
+            display: none;
+        }
+    }
 }
 tr:nth-child(even){
     background-color: #dddddd;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 12px;
+    box-sizing: border-box;
+}
+select {
+    width: 100%;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.customer-info{
+    width: 95%;
+
+    & p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.what-customer{
+    width: 20%;
+    margin-top: 20px;
+    @include respond-to('small'){
+        width: 100%;
+    }
+}
+#inv-mobile{
+    margin-top: 10px;
+    width: 95%;
+
+    & input{
+        margin-top: 10px;
+    }    
+    @include respond-to('medium'){
+        display: none;
+    }
+}
+#inv-desktop{
+    @include respond-to('small'){
+        display: none;
+    }
 }

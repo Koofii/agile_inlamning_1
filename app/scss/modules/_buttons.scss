@@ -6,11 +6,27 @@
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px
+    margin: 4px 2px;
+    border-radius: 3px;
+    
 }
 .create-new{
     margin-top: 50px;
     width: 90%;
     text-align: right;
     margin-right: 50px;
+    @include respond-to ('small'){
+        text-align: center;
+        margin-right: 10px;
+        
+    }
+}
+.send-invoice{
+    text-align: center;
+    margin-top: 30px;
+    width: 95%;
+    @include respond-to ('medium'){
+        text-align: right;
+    }
+
 }

@@ -21,33 +21,29 @@ a {
   margin: 0 auto;
   padding: 0; }
 
-#logo {
-  text-align: center;
-  color: white;
-  font-size: 70px; }
-
-.logo-meny {
-  text-align: right;
-  background-color: #333;
-  padding: 20px 0px 20px 0px; }
-  .logo-meny a {
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-    margin-right: 50px; }
-
 .nav-software {
   width: 100%;
   padding: 20px 0px 20px 0px;
   background-color: #fff;
   border-bottom: 1px solid #c7c7c7; }
-  .nav-software ul li {
-    display: inline-block;
-    margin: 0px 15px 0px 15px; }
-    .nav-software ul li a {
-      color: #333;
-      font-size: 20px;
-      font-weight: bold; }
+  .nav-software ul {
+    margin-left: 35px; }
+    .nav-software ul li {
+      display: inline-block;
+      margin: 0px 15px 0px 15px; }
+      @media (max-width: 45em) {
+        .nav-software ul li {
+          display: block;
+          text-align: center;
+          margin: 5px 0px 5px 0px; } }
+      .nav-software ul li a {
+        color: #333;
+        font-size: 20px; }
+        @media (max-width: 45em) {
+          .nav-software ul li a {
+            font-size: 25px; } }
+        .nav-software ul li a:hover {
+          font-weight: bold; }
 
 table {
   border-collapse: collapse;
@@ -58,9 +54,52 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px; }
+  @media (max-width: 45em) {
+    td:nth-child(3), th:nth-child(3) {
+      display: none; }
+    td:nth-child(4), th:nth-child(4) {
+      display: none; } }
 
 tr:nth-child(even) {
   background-color: #dddddd; }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 12px;
+  box-sizing: border-box; }
+
+select {
+  width: 100%;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1; }
+
+.customer-info {
+  width: 95%; }
+  .customer-info p {
+    font-size: 20px;
+    text-align: center; }
+
+.what-customer {
+  width: 20%;
+  margin-top: 20px; }
+  @media (max-width: 45em) {
+    .what-customer {
+      width: 100%; } }
+
+#inv-mobile {
+  margin-top: 10px;
+  width: 95%; }
+  #inv-mobile input {
+    margin-top: 10px; }
+  @media (min-width: 45em) {
+    #inv-mobile {
+      display: none; } }
+
+@media (max-width: 45em) {
+  #inv-desktop {
+    display: none; } }
 
 .button {
   background-color: #333;
@@ -70,13 +109,26 @@ tr:nth-child(even) {
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px; }
+  margin: 4px 2px;
+  border-radius: 3px; }
 
 .create-new {
   margin-top: 50px;
   width: 90%;
   text-align: right;
   margin-right: 50px; }
+  @media (max-width: 45em) {
+    .create-new {
+      text-align: center;
+      margin-right: 10px; } }
+
+.send-invoice {
+  text-align: center;
+  margin-top: 30px;
+  width: 95%; }
+  @media (min-width: 45em) {
+    .send-invoice {
+      text-align: right; } }
 
 #intro {
   margin-top: 20vh;
@@ -101,6 +153,55 @@ tr:nth-child(even) {
         margin: 50px;
         display: inline-block; } }
 
+.logo-all {
+  background-color: #333; }
+  @media (min-width: 45em) {
+    .logo-all {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; } }
+
+.logo-slogan {
+  font-size: 15px;
+  color: white;
+  text-align: center; }
+  @media (min-width: 45em) {
+    .logo-slogan {
+      color: white;
+      font-size: 20px;
+      margin-left: 50px;
+      padding: 50px 0px 20px 0px;
+      width: 50%;
+      text-align: left; } }
+
+.logo-meny {
+  text-align: center;
+  color: white;
+  padding: 10px; }
+  .logo-meny a {
+    color: white;
+    font-size: 40px; }
+
+@media (min-width: 45em) {
+  .logo-meny {
+    text-align: right;
+    padding: 20px 0px 20px 0px;
+    width: 50%;
+    margin-right: 50px; }
+    .logo-meny a {
+      color: white;
+      font-size: 60px;
+      font-weight: bold; }
+    .logo-meny p {
+      color: white;
+      margin-right: 50px; } }
+
+#logo {
+  text-align: center;
+  color: white;
+  font-size: 70px; }
+
 footer {
   background-color: #333;
   text-align: center;
@@ -116,7 +217,7 @@ footer {
       width: 100%; }
       footer div {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         text-align: center; } }
 
 .footer {

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-all">
+            <div class="logo-slogan">
+                Välkommen till friheten ni längtat efter!
+            </div>
+            <div class="logo-meny">
+                <a href="index.html">KOOFNOX</a>
+                <p>Här bokför riktiga hjältar</p>
+            </div>
+        </div>
+        <nav class="nav-software">
+            <ul>
+                <li><a href="book-keeping.html">Bokföring</a></li>
+                <li><a href="invoicing.html">Fakturering</a></li>
+                <li><a href="invoicing.html">Rapporter</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <section>
+        <div class="create-new">
+            <a href="book-keeping.html" class="button">Visa Lista</a>
+        </div>
+    </section>
+    <table>
+        <tr>
+          <th>Konto</th>
+          <th>Transaction Info</th>
+          <th>Debet</th>
+          <th>Kredit</th>
+        </tr>
+        <tr>
+          <td>
+                <select id="country" name="country">
+                    <option value="Kassa">1910 - Kassa</option>
+                    <option value="Check">1930 - Check</option>
+                    <option value="Utgående moms">2610 - Utgående moms</option>
+                    <option value="Ingående Moms">2640 - Ingående moms</option>
+                    <option value="Kostnad">4010 - Kostnad</option>
+                    <option value="Försäljnig">3001 - Försäljning</option>
+                    <option value="Lön">7220 - Lön Företagsägare</option>
+                </select>
+          </td>
+          <td><input type="text" id="transaction-info" name="tinfo"></td>
+          <td><input type="text" id="debet1" name="firstname" placeholder="Amount"></td>
+          <td><input type="text" id="kredit1" name="firstname" placeholder="Amount"></td>
+        </tr>
+        <tr>
+            <td>
+                <select>
+                    <option value="Kassa">1910 - Kassa</option>
+                    <option value="Check">1930 - Check</option>
+                    <option value="Utgående moms">2610 - Utgående moms</option>
+                    <option value="Ingående Moms">2640 - Ingående moms</option>
+                    <option value="Kostnad">4010 - Kostnad</option>
+                    <option value="Försäljnig">3001 - Försäljning</option>
+                    <option value="Lön">7220 - Lön Företagsägare</option>
+                </select>
+            </td>
+          <td><input type="text" id="transaction-info1" name="tinfo1"></td>
+          <td><input type="text" id="debet2" name="firstname" placeholder="Amount"></td>
+          <td><input type="text" id="kredit2" name="firstname" placeholder="Amount"></td>
+    </table>
+    <section>
+        <div class="create-new">
+            <a href="book-keeping.html" class="button">Bokför</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            Adress: <br>
+            Frövägen 20a <br>
+            352 41 Växjö <br>
+            Sweden
+        </div>
+        <div class="footer">
+            "Knowing what you want, helps you focus on what you need to do"<br>
+            "We all want the results but not everyone wants to work"<br>
+            "Life is not a problem to be solved, but a reality to be experienced"
+        </div>
+        <div class="footer">
+            Kontakta oss: <br>
+            Telefon: 070 - 509 81 02 <br>
+            Mejl: info@info.se <br>
+            Går även att skicka Post 
+        </div>
+    </footer>
+</body>
+</html>

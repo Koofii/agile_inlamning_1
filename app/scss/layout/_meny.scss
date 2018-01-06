@@ -25,3 +25,62 @@
         }
     }
 }
+
+    .logo-all{
+        background-color: #333;
+        @include respond-to('medium'){
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    .logo-slogan{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+
+        @include respond-to('medium'){
+            color: white;
+            font-size: 20px;
+            margin-left: 50px;
+            padding: 50px 0px 20px 0px;
+            width: 50%;
+            text-align: left;
+        }
+    }
+
+    .logo-meny{
+        text-align: center;
+        color: white;
+        padding: 10px;
+        & a{
+            color: white;
+            font-size: 40px;
+        }
+    }
+    @include respond-to('medium'){
+    .logo-meny{
+        text-align: right;
+        padding: 20px 0px 20px 0px;
+        width: 50%;
+        margin-right: 50px;
+        & a{
+            color:white;
+            font-size: 60px;
+            font-weight: bold;
+
+        }
+        & p{
+            color: white;
+            margin-right: 50px;
+        }
+    }
+}
+
+    #logo{
+        text-align: center;
+        color: white;
+        font-size: 70px;
+    }

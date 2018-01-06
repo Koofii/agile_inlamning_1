@@ -32,46 +32,55 @@
     </nav>
     <section>
         <div class="create-new">
-            <a href="create-new-bk.html" class="button">Skapa Ny</a>
+            <a href="invoicing.html" class="button">Visa Lista</a>
         </div>
     </section>
-    <table>
+    <div class="customer-info">
+        <p>
+            Vilken kund skall faktureras?
+        </p>
+        <div class="what-customer">
+            <select>
+                <option value="JE">Jonas Eriksson</option>
+                <option value="KF">Kristoffer Frejd</option>
+                <option value="RS">Robert Sjöblom</option>
+                <option value="SD">Simon Dyhr</option>
+                <option value="JS">Johan Samuelsson</option>
+                <option value="AL">Anton Lundin</option>
+                <option value="JF">Jens Franzon</option>
+            </select>
+        </div>
+    </div>
+    <div id="inv-mobile">
+        <input type="text" id="Artikel" name="firstname" placeholder="Artikel">
+        <input type="text" id="Beskrivning" name="firstname" placeholder="Beskrivning">
+        <input type="text" id="Moms" name="firstname" placeholder="Moms">
+        <input type="text" id="Nettobelopp" name="firstname" placeholder="A-pris">
+    </div>
+    <table id="inv-desktop">
         <tr>
-          <th>Verifikation</th>
-          <th>Transaction Info</th>
-          <th>Date</th>
+          <th>Artikelnr.</th>
+          <th>Beskrivning</th>
+          <th>Moms</th>
+          <th>Nettobelopp</th>
         </tr>
         <tr>
-          <td>A1</td>
-          <td>Frimärken</td>
-          <td>2012-01-01</td>
+          <td><input type="text" id="Artikel" name="firstname" placeholder="Artikel"></td>
+          <td><input type="text" id="Beskrivning" name="firstname" placeholder="Beskrivning"></td>
+          <td><input type="text" id="Moms" name="firstname" placeholder="Moms"></td>
+          <td><input type="text" id="Nettobelopp" name="firstname" placeholder="A-pris"></td>
         </tr>
         <tr>
-          <td>A2</td>
-          <td>PostNord</td>
-          <td>2012-01-05</td>
-        </tr>
-        <tr>
-          <td>A3</td>
-          <td>Visma goodbye</td>
-          <td>2012-03-05</td>
-        </tr>
-        <tr>
-          <td>A4</td>
-          <td>Helen Bennett</td>
-          <td>2012-04-01</td>
-        </tr>
-        <tr>
-          <td>A5</td>
-          <td>Yoshi Tannamuri</td>
-          <td>2012-06-30</td>
-        </tr>
-        <tr>
-          <td>A6</td>
-          <td>Giovanni Rovelli</td>
-          <td>2012-08-05</td>
+          <td><input type="text" id="Artikel" name="firstname" placeholder="Artikel"></td>
+          <td><input type="text" id="Beskrivning" name="firstname" placeholder="Beskrivning"></td>
+          <td><input type="text" id="Moms" name="firstname" placeholder="Moms"></td>
+          <td><input type="text" id="Nettobelopp" name="firstname" placeholder="A-pris"></td>
         </tr>
     </table>
+    <div class="send-invoice">
+        <a href="#" class="button">Skicka som E-faktura</a>
+        <a href="#" class="button">Skicka via E-post</a>
+    </div>
     <footer>
         <div class="footer">
             Adress: <br>
