@@ -2,7 +2,7 @@
 .nav-software{
     width: 100%;
     padding: 20px 0px 20px 0px;
-    background-color: #fff;
+    background-color: map-get($colors, bright );
     border-bottom: 1px solid rgb(199, 199, 199);
     
     & ul{
@@ -17,7 +17,7 @@
             }
 
             & a{
-                color: #333;
+                color: map-get($colors, main );
                 font-size: 20px;
                 @include respond-to('small'){
                     font-size: 25px;

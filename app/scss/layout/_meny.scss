@@ -27,9 +27,9 @@
 }
 
     .logo-all{
-        background-color: #333;
+        background-color: map-get($colors, main );
         @include respond-to('medium'){
-            background-color: #333;
+            background-color: map-get($colors, main );
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -38,7 +38,7 @@
 
     .logo-slogan{
         font-size: 15px;
-        color: white;
+        color: map-get($colors, bright );
         text-align: center;
 
         @include respond-to('medium'){
@@ -53,7 +53,7 @@
 
     .logo-meny{
         text-align: center;
-        color: white;
+        color: map-get($colors, bright);
         padding: 10px;
         & a{
             color: white;
@@ -67,13 +67,13 @@
         width: 50%;
         margin-right: 50px;
         & a{
-            color:white;
+            color: map-get($colors, bright);
             font-size: 60px;
             font-weight: bold;
 
         }
         & p{
-            color: white;
+            color: map-get($colors, bright);
             margin-right: 50px;
         }
     }
@@ -81,6 +81,6 @@
 
     #logo{
         text-align: center;
-        color: white;
+        color: map-get($colors, bright);
         font-size: 70px;
     }
