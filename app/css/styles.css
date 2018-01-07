@@ -112,6 +112,13 @@ select {
   #inv-desktop {
     display: none; } }
 
+div figure {
+  margin-top: 50px; }
+  div figure img {
+    display: block;
+    margin: auto;
+    width: 50%; }
+
 .create-new {
   margin-top: 50px;
   width: 90%;

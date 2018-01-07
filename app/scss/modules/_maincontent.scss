@@ -64,3 +64,11 @@ select {
         display: none;
     }
 }
+div figure{
+    margin-top: 50px;
+    & img{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+}
