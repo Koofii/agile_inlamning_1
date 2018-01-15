@@ -53,8 +53,6 @@ a {
         @media (max-width: 45em) {
           .nav-software ul li a {
             font-size: 25px; } }
-        .nav-software ul li a:hover {
-          font-weight: bold; }
 
 table {
   border-collapse: collapse;
